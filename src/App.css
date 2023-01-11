@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: #121213;
+}
+
+.App{
+width: 100vw;
+height: 100vh;
+color: white;
+text-align: center;
+background-color: #121213;
+font-family: Arial, Helvetica, sans-serif;
+overflow-x: hidden;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #3a3a3c;
+  padding-top: 10px;
+}
+nav h1{
+  margin: 0;
+  color: white;
+  font-size: 40px;
+}
+.game{
+  width: 100vw;
+  height: 600px;/* calc(100vh-170px); */
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  align-items: center;
+}
+.board{
+  width: 300px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #2929ca; */
+}
+.row{
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.letter{
+  flex: 33%;
+  height: 100%;
+  border: 2px solid grey;
+  display: grid;
+  margin: 5px;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
+.keyboard{
+  width: 600px;
+  height: 200px;
+  margin-top: 50px;
+}
+.line{
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.key{
+width: 60px;
+height: 70px;
+border-radius: 4px;
+display: grid;
+font-size: 17px;
+margin: 5px;
+font-weight: bold;
+cursor: pointer;
+background-color: grey;
+place-items: center;
+}
+.bigKey{
+  width: 100%;
+}
+
+#disabled{
+  background-color: #3a393c;
+}
+#almostletter{
+  background-color: #b49f39;
+}
+#correctLetter{
+  background-color: #528d4e;
+}
+
+#correct{
+  background-color: #528d4e;
+  border: 2px solid #528d4e;
+}
+
+#almost{
+  background-color: #b49f39;
+  border: 2px solid #b49f39;
+}
+
+#error{
+  background-color: #3a3a3c;
+  border: 2px solid #3a3a3c;
+}
+
+.gameOver{
+  margin-top: 30px;
+  line-height: 35px;
+}
